@@ -9,8 +9,19 @@ package ec.edu.intsuperior.vista;
  * @author Mathew
  */
 public class Aplicacion {
-  public static void main(String[] args) {
-    System.out.println("¡Hola mundo!");
-    System.out.println("Ingrese un numero");
+  function sumarNumerosPares(arr) {
+  let suma = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      suma += arr[i];
+    }
   }
+  return suma;
+}
+
+// Ejemplo de uso:
+let numeros = [1, 2, 3, 4, 5, 6];
+let resultado = sumarNumerosPares(numeros);
+console.log(resultado); // Output: 12
+
 }
